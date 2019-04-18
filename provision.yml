@@ -1,6 +1,4 @@
 - hosts: localhost 
-  vars:
-    ansible_python_interpreter: /home/blessjah/python-with-boto3.sh
   tasks:
     - name: Lms_Admin ec2
       cloudformation:
