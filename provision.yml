@@ -1,13 +1,5 @@
 - hosts: localhost 
   tasks:
-  
-   - name: Ensure boto and boto3 modules are installed
-    pip:
-      name: "{{ item }}"
-    with_items:
-      - boto3
-      - botocore
-    delegate_to: "{{ localhost }}"
     - name: Lms_Admin ec2
       cloudformation:
         stack_name: 'JenkinsToAWSDeploy'
